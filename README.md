@@ -1,77 +1,55 @@
-# Self-Evolving Knowledge Base
+# xinxiagent
 
-A multi-agent system for automated knowledge management running locally on Windows.
+信息搜集与处理 AI Agent
 
-## Architecture
+---
 
-```
-├── Agents (7 specialized agents)
-│   ├── Coordinator - Orchestrates workflows
-│   ├── Collector - Gathers external content via Firecrawl
-│   ├── Evaluator - Calculates information density
-│   ├── Storage - Writes to Obsidian vault
-│   ├── Explorer - Health checks
-│   ├── Planner - Generates improvements
-│   └── Executor - Implements fixes
-│
-├── Local Services
-│   ├── Firecrawl (localhost:3002) - Web scraping
-│   └── Obsidian Vault - Knowledge storage
-│
-└── Runtime
-    ├── queue/ - Message queues
-    ├── cache/ - Content cache
-    └── logs/ - Activity logs
-```
+## 30 秒了解这个项目
 
-## Features
+| 维度 | 内容 |
+|------|------|
+| 项目类型 | AI/Agent 项目 |
+| 技术栈 | unknown |
+| 核心功能 | 信息搜集与处理 AI Agent |
+| 适用场景 | 个人学习、原型验证、工具辅助 |
 
-- **Auto Collection**: Scrape from web via local Firecrawl
-- **Density Assessment**: 7-dimension scoring algorithm
-- **Health Explorer**: Scan vault for issues
-- **Self-Evolution**: Auto-improve based on findings
-- **Bidirectional Convert**: Project ↔ Knowledge
+---
 
-## Quick Start
+## 30-Second Project Overview
+
+| Dimension | Content |
+|------|------|
+| Project Type | AI/Agent Project |
+| Tech Stack | unknown |
+| Core Function | 信息搜集与处理 AI Agent |
+| Use Cases | Learning, prototyping, tool assistance |
+
+---
+
+## 快速开始
 
 ```bash
-# Start Firecrawl (local)
-cd firecrawl
-docker compose up -d
+# Python
+pip install -r requirements.txt && python app.py
 
-# Use via Claude Code
-"采集 https://example.com"
-"检查知识库健康"
+# Node.js
+npm install && npm start
 ```
 
-## Agent Definitions
+---
 
-Located in `.claude/agents/`:
-- `self-evolving-kb-collector.md`
-- `self-evolving-kb-evaluator.md`
-- `self-evolving-kb-storage.md`
-- `self-evolving-kb-explorer.md`
-- `self-evolving-kb-planner.md`
-- `self-evolving-kb-executor.md`
-- `self-evolving-kb-coordinator.md`
+## 项目结构
+```
+├── src/          # 源代码
+├── tests/        # 测试
+└── README.md     # 项目说明
+```
 
-## Density Algorithm
+---
 
-| Dimension | Weight |
-|-----------|--------|
-| Bidirectional Links | 25% |
-| Original Insight | 25% |
-| Sections | 10% |
-| References | 10% |
-| Depth | 10% |
-| Frontmatter | 10% |
-| Length | 10% |
+## 许可证
+MIT License
 
-## Configuration
-
-- `config/format-standards.json` - Format thresholds
-- `config/health-indicators.json` - Health metrics
-
-## License
-
-MIT
+---
+*最后更新: 2026-05-23*
+*作者: 121212165*
